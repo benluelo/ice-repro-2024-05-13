@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "ics008-wasm-client"
+
+[dependencies]
+unionlabs = { workspace = true }

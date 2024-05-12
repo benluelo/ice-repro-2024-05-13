@@ -1,0 +1,11 @@
+[package]
+name = "bip32"
+# ICE: Version is required for ICE
+version = "0.5.1"
+edition  = "2021"
+
+[dependencies]
+bs58 = { version = "0.5", default-features = false }
+rand_core = { version = "0.6", default-features = false }
+ripemd = { version = "0.1", default-features = false }
+subtle = { version = "2", default-features = false }

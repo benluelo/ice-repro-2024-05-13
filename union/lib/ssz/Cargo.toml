@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "ssz"
+version = "0.5.3"
+
+[dependencies]

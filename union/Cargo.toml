@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = [
+  "lib/ics-008-wasm-client",
+  "lib/ssz",
+  "lib/unionlabs",
+
+  "tested-lib",
+]
+
+[workspace.package]
+edition = "2021"
+
+[profile.release]
+lto = "thin"
+opt-level = 3
+
+[workspace.dependencies]
+ics008-wasm-client = { path = "lib/ics-008-wasm-client", default-features = false }
+ssz = { path = "lib/ssz", default-features = false }
+unionlabs = { path = "lib/unionlabs", default-features = false }
+
+# bip32 = { path = "bip32/bip32", default-features = false }
+# ICE: This HAS to be under a path iqlusioninc/... (TODO: Narrow down what this has to be?)
+bip32 = { path = "../iqlusioninc/bip32", default-features = false }

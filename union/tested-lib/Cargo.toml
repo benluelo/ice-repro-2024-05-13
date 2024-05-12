@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "tested-lib"
+
+[dependencies]
+ics008-wasm-client = { workspace = true }
